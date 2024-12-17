@@ -90,9 +90,9 @@
 			"hub": [
 				[  // chain1
 					{"unit": "armbeamer", "category": "defence", "offset": {"front": 80}, "condition": {"chance": 0.25}}
-//				],
-//				[  // chain2
-//					{"unit": "armmakr", "category": "convert", "offset": [80, 80], "condition": {"energy": true}}
+				],
+				[  // chain2
+					{"unit": "armmakr", "category": "convert", "offset": [80, 80], "condition": {"energy": true}}
 				]
 			]
 		},
