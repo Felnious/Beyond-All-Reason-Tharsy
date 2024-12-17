@@ -106,10 +106,11 @@
 		"armfus": {
 			"hub": [
 				[ 
-					//{"unit": "armpb", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.5}},
+					{"unit": "armmmkr", "category": "convert", "offset": [120, 120]},
+					{"unit": "armpb", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.5}},
 					{"unit": "armferret", "category": "defence", "offset": [-80, 80], "condition": {"air": true}},
 					{"unit": "armnanotc", "category": "defence", "offset": {"front": 100}},
-					{"unit": "armsilo", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.2}}
+					{"unit": "armsilo", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.2}},
 				]
 			]
 		},
@@ -118,22 +119,21 @@
 				[  
 					
 					{"unit": "armpb", "category": "defence", "offset": [-200, -200], "condition": {"chance": 0.5}},
-					{"unit": "armferret", "category": "defence", "offset": [-200, 200], "condition": {"air": true}}
+					{"unit": "armferret", "category": "defence", "offset": [-200, 200], "condition": {"air": true}},
 				]
 			]
 		},
 		"armafus": {
 			"hub": [
 				[  // chain1
-//					{"unit": "armmmkr", "category": "convert", "offset": [120, 120]},
-//					{"unit": "armmmkr", "category": "convert", "offset": [150, 120]},
-//					{"unit": "armmmkr", "category": "convert", "offset": [120, 150]},
-//					{"unit": "armmmkr", "category": "convert", "offset": [150, 150]},
-//					{"unit": "armmmkr", "category": "convert", "offset": [120, -120]},
-		
+					{"unit": "armmmkr", "category": "convert", "offset": [120, 120], "condition": {"chance": 1.0}},
+					{"unit": "armmmkr", "category": "convert", "offset": [150, 120], "condition": {"chance": 1.0}},
+					{"unit": "armmmkr", "category": "convert", "offset": [120, 150], "condition": {"chance": 1.0}},
+					{"unit": "armmmkr", "category": "convert", "offset": [150, 150], "condition": {"chance": 1.0}},
+					{"unit": "armsilo", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.2}},
+					{"unit": "armamd", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.5}},
 					
-	
-					{"unit": "armferret", "category": "defence", "offset": [-80, 80], "condition": {"air": true}}
+					{"unit": "armferret", "category": "defence", "offset": [-80, 80], "condition": {"air": true}},
 				]
 			]
 		},
@@ -147,17 +147,33 @@
 		"corfus": {
 			"hub": [
 				[  
-                    {"unit": "cornanotc", "category": "defence", "offset": {"front": 100}},	
-                    {"unit": "cormadsam", "category": "defence", "offset": [-80, 80], "condition": {"air": true}},
-					{"unit": "corsilo", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.2}}
+					{"unit": "cormmkr", "category": "convert", "offset": [120, 120], "condition": {"chance": 1.0}},
+                   			{"unit": "cornanotc", "category": "defence", "offset": {"front": 100}},	
+                    			{"unit": "cormadsam", "category": "defence", "offset": [-80, 80], "condition": {"air": true}},
+					{"unit": "corsilo", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.2}},
+					{"unit": "corfmd", "category": "defence", "offset": [200, 0], "condition": {"chance": 1.0}},
+					
+					{"unit": "legabm", "category": "defence", "offset": [200, 0], "condition": {"chance": 1.0}},  //Added Legion to Cortex until Legion Afus is Complete
+					{"unit": "legrhapsis", "category": "defence", "offset": [-80, 80], "condition": {"air": true}}, //Added Legion to Cortex until Legion Afus is Complete
 				]
 			]
 		},
 		"corafus": {
 			"hub": [
 				[
-					{"unit": "cordoom", "category": "defence", "offset": [-180, 180]},
-					{"unit": "cormadsam", "category": "defence", "offset": [-80, 80], "condition": {"air": true}}
+					{"unit": "cormmkr", "category": "convert", "offset": [120, 120], "condition": {"chance": 1.0}},
+					{"unit": "cormmkr", "category": "convert", "offset": [150, 120], "condition": {"chance": 1.0}},
+					{"unit": "cormmkr", "category": "convert", "offset": [120, 150], "condition": {"chance": 1.0}},
+					{"unit": "cormmkr", "category": "convert", "offset": [150, 150], "condition": {"chance": 1.0}},
+					{"unit": "corsilo", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.2}},
+					{"unit": "corfmd", "category": "defence", "offset": [150, 0], "condition": {"chance": 1.0}},
+					
+					{"unit": "legsilo", "category": "defence", "offset": [200, 0], "condition": {"chance": 0.2}}, //Added Legion to Cortex until Legion Afus is Complete
+					{"unit": "legabm", "category": "defence", "offset": [200, 0], "condition": {"chance": 1.0}},  //Added Legion to Cortex until Legion Afus is Complete
+					
+					{"unit": "cormadsam", "category": "defence", "offset": [-80, 80], "condition": {"air": true}},
+					
+					{"unit": "legrhapsis", "category": "defence", "offset": [-80, 80], "condition": {"air": true}}, //Added Legion to Cortex until Legion Afus is Complete
 				]
 			]
 		},
