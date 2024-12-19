@@ -39,6 +39,18 @@ string corasy  ("corasy");
 string corap   ("corap");
 string coraap  ("coraap");
 string corgant ("corgant");
+string leglab  ("leglab");
+string legalab ("legalab");
+string legvp   ("legvp");
+string legavp  ("legavp");
+string legsy   ("legjim");
+string legasy  ("legasy");
+string legap   ("legap");
+string legaap  ("legaap");
+string leggant ("leggant");
+string armapt3 ("armapt3");
+string corapt3 ("corapt3");
+string legapt3 ("legapt3");
 
 float switchLimit = MakeSwitchLimit();
 
