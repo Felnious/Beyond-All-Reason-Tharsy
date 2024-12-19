@@ -59,6 +59,9 @@ SOpener@ GetOpenInfo()
 			SQueue(0.3f, {SO(RT::SCOUT, 2), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER)}),
 			SQueue(0.3f, {SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER)})
 		}},
+		{Factory::armapt3, array<SQueue> = {
+			SQueue(1.0f, {SO(RT::ASSAULT, 15), SO(RT::SUPER, 3)})
+		}},
 		{Factory::armalab, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::BUILDER2), SO(RT::RIOT), SO(RT::ASSAULT, 2), SO(RT::BUILDER2), SO(RT::ASSAULT), SO(RT::SKIRM), SO(RT::BUILDER2), SO(RT::AHA, 2), SO(RT::BUILDER2), SO(RT::HEAVY), SO(RT::BUILDER2)})
 		}},
@@ -96,6 +99,9 @@ SOpener@ GetOpenInfo()
 		{Factory::coravp, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::BUILDER2), SO(RT::SKIRM, 2), SO(RT::BUILDER2), SO(RT::ASSAULT), SO(RT::BUILDER2),SO(RT::HEAVY), SO(RT::BUILDER2, 2)})
 		}},
+		{Factory::corapt3, array<SQueue> = {
+			SQueue(1.0f, {SO(RT::ASSAULT, 15), SO(RT::SUPER, 3)})
+		}},
 		{Factory::corgant, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::RAIDER), SO(RT::ASSAULT), SO(RT::ARTY, 2)})
 		}},
@@ -127,6 +133,9 @@ SOpener@ GetOpenInfo()
 		}},
 		{Factory::legavp, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::BUILDER2), SO(RT::SKIRM, 2), SO(RT::BUILDER2), SO(RT::ASSAULT), SO(RT::BUILDER2),SO(RT::HEAVY), SO(RT::BUILDER2, 2)})
+		}},
+		{Factory::legapt3, array<SQueue> = {
+			SQueue(1.0f, {SO(RT::ASSAULT, 15), SO(RT::SUPER, 3)})
 		}},
 		{Factory::leggant, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::RAIDER), SO(RT::ASSAULT), SO(RT::ARTY, 2)})
