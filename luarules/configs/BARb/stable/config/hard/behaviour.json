@@ -274,7 +274,7 @@
 			"role": ["support"],		// nanos with role "support" are considered "low priority"
 			"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
 		},
-		"armnanotcplat": {
+		"armnanotct2": {
 			"role": ["support"],
 			"build_speed": 10.0  //lower values => more and earlier nanos (workaround) 
 		},
@@ -282,7 +282,15 @@
 			"role": ["static"],
 			"build_speed": 10.0 
 		},
-		"cornanotcplat": {
+		"cornanotct2": {
+			"role": ["static"],
+			"build_speed": 10.0 
+		},
+		"legnanotc": {
+			"role": ["static"],
+			"build_speed": 10.0 
+		},
+		"legnanotct2": {
 			"role": ["static"],
 			"build_speed": 10.0 
 		},
@@ -364,6 +372,12 @@
 				"vs": {"scout":0.1, "raider":0.1, "heavy": 2.0, "super":2.0}
 			}
 		},
+		"armannit3": {
+			"role": ["static"],
+			"threat": {"air":0.0, "surf":0.5, "water":0.1, 
+				"vs": {"scout":0.1, "raider":0.1, "heavy": 2.0, "super":2.0}
+			}
+		},
 		"armbrtha": {
 			"role": ["static"]
 		},
@@ -405,6 +419,21 @@
 		"armkraken": {
 			"role": ["static"],
 			"threat": {"air":0.0, "surf":1.0, "water":1.0}
+		},
+		"armbotrail": {
+			"role": ["static"],
+			"threat": {"air":0.5, "surf":0.4, "water":0.1, 
+			"vs": {"scout":0.2, "raider":0.3, "heavy": 2.0, "super":2.0}}
+		},
+		"armminivulc": {
+			"role": ["static"],
+			"threat": {"air":0.5, "surf":0.4, "water":0.1, 
+			"vs": {"scout":0.2, "raider":0.3, "heavy": 2.0, "super":2.0}}
+		},
+		"armvulc": {
+			"role": ["static"],
+			"threat": {"air":0.5, "surf":0.4, "water":0.1, 
+			"vs": {"scout":0.2, "raider":0.3, "heavy": 2.0, "super":2.0}}
 		},
 		
 // DEFENSE - Cortex
@@ -501,20 +530,34 @@
 		"cordoom": {
 			"role": ["static"],
 			"threat": {"air":0.0, "surf":1.0, "water":0.1, "vs": {"scout":0.4, "raider":0.4, "artillery":0.3, "anti_heavy":0.5, "anti_heavy_ass":0.5, "super":0.8}}
-        },
-        "corfdoom": {
-            "role": ["static"],
+       		 },
+		"cordoomt3": {
+			"role": ["static"],
+			"threat": {"air":0.0, "surf":1.0, "water":0.1, "vs": {"scout":0.4, "raider":0.4, "artillery":0.3, "anti_heavy":0.5, "anti_heavy_ass":0.5, "super":0.8}}
+       		 },
+		"corminibuzz": {
+			"role": ["static"],
+			"threat": {"air":0.5, "surf":0.4, "water":0.1, 
+			"vs": {"scout":0.2, "raider":0.3, "heavy": 2.0, "super":2.0}}
+		},
+		"corbuzz": {
+			"role": ["static"],
+			"threat": {"air":0.5, "surf":0.4, "water":0.1, 
+			"vs": {"scout":0.2, "raider":0.3, "heavy": 2.0, "super":2.0}}
+		},
+       		 "corfdoom": {
+         		"role": ["static"],
 			"threat": {"air":0.0, "surf":1.0, "water":0.1, "vs": {"scout":0.4, "raider":0.4, "artillery":0.3, "anti_heavy":0.5, "anti_heavy_ass":0.5, "super":0.8}}
 		},
-        "corjuno":{
+        	"corjuno":{
 			"role":["super", "static"],
 			"since": 900
 		},
-        "corsilo":{
+        	"corsilo":{
 			"role":	["super", "static"],
-            "threat":{"air": 0.0, "water": 0.0, "surf": 0.1},
+            		"threat":{"air": 0.0, "water": 0.0, "surf": 0.1},
 			"limit": 1
-        },
+        	},
 
 
 
@@ -692,39 +735,39 @@
 // ignore
 		"armfort": {
 			"role": ["static"],
-			"ignore": true
+			"ignore": false
 		},
 		"corfort": {
 			"role": ["static"],
-			"ignore": true
+			"ignore": false
 		},
 		"armdrag_scav": {
 			"role": ["static"],
-			"ignore": true
+			"ignore": false
 		},
 		"cordrag_scav": {
 			"role": ["static"],
-			"ignore": true
+			"ignore": false
 		},
 		"armfort_scav": {
 			"role": ["static"],
-			"ignore": true
+			"ignore": false
 		},
 		"corfort_scav": {
 			"role": ["static"],
-			"ignore": true
+			"ignore": false
 		},
 		"corscavdrag": {
 			"role": ["static"],
-			"ignore": true
+			"ignore": false
 		},
 		"corscavdrag_scav": {
 			"role": ["static"],
-			"ignore": true
+			"ignore": false
 		},
 		"legforti": {
 			"role": ["static"],
-			"ignore": true
+			"ignore": false
 		},
 
 // ============================================   M O B I L E    U N I T S   =======================================0
@@ -1103,7 +1146,7 @@
 
 
 
-		// T3 bot - armshltx
+		// T3 ARMADA EXPERIMENTAL - armshltx
 
 		"armmar": {
 			"role": ["raider", "heavy"],
@@ -1129,18 +1172,51 @@
 			"role": ["super"],
 			"attribute": ["melee"],
 			"threat": {"air": 0.0, "water": 0.0, "surf":1.0},
-            "power": 1.5,
-            "retreat": 0.3
+            		"power": 1.5,
+            		"retreat": 0.3
 		},
 		"armthor":{
 			"role":["super"],
 			"threat": {"air": 0.0, "water": 0.0, "surf":1.0},
 			"power": 0.1, //cause of its paralyzer weaponry
-            "retreat": 0.4
+            		"retreat": 0.4
+		},
+		"armpwt4": {
+			"role": ["raider", "heavy"],
+			"threat": {"air": 0.5, "water": 0.0, "surf": 0.5}	
+		},
+		"armmeatball": {
+			"role": ["raider", "heavy"],
+			"threat": {"air": 0.5, "water": 0.0, "surf": 0.5}	
+		},
+		"armassimilator": {
+			"role": ["raider", "heavy"],
+			"threat": {"air": 0.5, "water": 0.0, "surf": 0.5}	
+		},
+		"armvadert4":{
+			"role":["super"],
+			"threat": {"air": 0.0, "water": 0.0, "surf":1.0},
+			"power": 0.1, //cause of its paralyzer weaponry
+            		"retreat": 0.4
+		},
+		"armrattet4": {
+			"role": ["super", "heavy"],
+			"attribute": ["melee"],
+			"threat": {"air": 0.0, "water": 0.0, "surf":1.0},
+            		"power": 1.5,
+            		"retreat": 0.3
 		},
 
 
-
+		// T3 CORTEX EXPERIMENTAL - armapt3
+		"armlichet4": {
+			"role": ["assault"],
+			"retreat": 0.5
+		},
+		"armfepocht4": {
+			"role": ["super", "heavy"],
+			"retreat": 0.6
+		},
 
 		// vehicles - armvp
 
@@ -1557,58 +1633,45 @@
 			"role": ["artillery"],
 			"attribute": ["siege"],
 			"threat": {"surf": 0.5, "vs":{"static":4.0, "artillery":4.0}},
-            "power": 0.5
+            		"power": 0.5
 		},
 		"corkorg": {
 			"role": ["super"],
 			"attribute": ["melee"],
-            "power": 1.5,
+            		"power": 1.5,
 			"retreat": 0.00
 		},
 		"corjugg": {
 			"role": ["super"],
 			"attribute": ["melee"],
-            "power": 1.5,
+            		"power": 1.5,
+			"retreat": 0.00
+		},
+		"corkarganetht4": {
+			"role": ["raider", "heavy"]
+		},
+		"corakt4": {
+			"role": ["raider", "heavy"]
+		},
+		"corthermite": {
+			"role": ["raider", "heavy"]
+		},
+		"corgolt4": {
+			"role": ["super"],
+			"attribute": ["melee"],
+            		"power": 1.5,
 			"retreat": 0.00
 		},
 	
 
-
-
-		// CORE T1 VEHICLE - corvp
-
-		"corfav": {
-			"role": ["scout"],
-			"threat":{"vs":{"artillery": 2.0}}
-		},
-		"corgator": {
-			"role": ["raider"],
-			"attribute": ["scout"],
-			"threat":{"vs":{"artillery": 2.0}},
-			"limit": 30
-		},
-		"corgarp": {
-			"role": ["raider"],
-			"threat":{"vs":{"artillery": 2.0}},
-			"limit": 25
-		},
-		"corraid": {
-			"role": ["skirmish"],
-			"threat":{"vs":{"artillery": 2.0}}
-		},
-		"corlevlr": {
-			"role": ["riot"],
-			"threat": {"surf": 1.2, "vs":{"raider": 2.0}},
+		// T3 CORTEX EXPERIMENTAL - corapt3
+		"corcrwt4": {
+			"role": ["assault"],
 			"retreat": 0.5
 		},
-		"corwolv": {
-			"role": ["artillery"],
-			"attribute":["siege"],
-			"threat": {"surf": 0.2, "vs":{"static":5.0, "artillery":5.0}}
-		},
-		"cormist": {
-			"role": ["anti_air"],
-			"attribute": ["support", "siege"]
+		"corfblackhyt4": {
+			"role": ["super", "heavy"],
+			"retreat": 0.6
 		},
 	
 
@@ -1946,7 +2009,7 @@
 
 
 		// T3 LEGION EXPERIMENTAL - leggant
-		"leegmech": { // To be replaced
+		"leegmech": {
 			"role": ["skirmish"],
 			"retreat": 0.5
 		},
@@ -1954,16 +2017,39 @@
 			"role": ["assault", "heavy"],
 			"retreat": 0.6
 		},
-		"legpede": { // To be replaced
+		"legpede": {
 			"role": ["artillery"],
 			"attribute": ["siege"],
 			"threat": {"surf": 0.5, "vs":{"static":4.0, "artillery":4.0}},
-            "power": 0.5,
+            		"power": 0.5,
+			"retreat": 0.3
+		},
+		"legsrailt4": {
+			"role": ["artillery"],
+			"attribute": ["siege"],
+			"threat": {"surf": 0.5, "vs":{"static":4.0, "artillery":4.0}},
+            		"power": 0.5,
 			"retreat": 0.3
 		},
 		"legjav": {
 			"role": ["raider", "heavy"],
 			"threat": {"air": 0.5, "water": 0.0, "surf": 0.8}	
+		},
+		"leggobt3": {
+			"role": ["raider", "heavy"],
+			"threat": {"air": 0.5, "water": 0.0, "surf": 0.8}	
+		},
+
+
+
+		// T3 LEGION EXPERIMENTAL - legapt3
+		"legmost3": {
+			"role": ["assault"],
+			"retreat": 0.5
+		},
+		"legfortt4": {
+			"role": ["super", "heavy"],
+			"retreat": 0.6
 		},
 	
 
@@ -2225,7 +2311,7 @@
 	"role": ["support"],		// nanos with role "support" are considered "low priority"
 	"build_speed": 5.0  // bp 100, lower values => more and earlier nanos (workaround) 
 },
-"legnanotcplat": {
+"legnanotct2": {
 	"role": ["support"],
 	"build_speed": 5.0  //lower values => more and earlier nanos (workaround) 
 },
@@ -2296,6 +2382,12 @@
 	}
 },
 "legbastion": {
+	"role": ["static"],
+	"threat": {"air":0.5, "surf":0.4, "water":0.1, 
+		"vs": {"scout":0.2, "raider":0.3, "heavy": 2.0, "super":2.0}
+	}
+},
+"legministarfall": {
 	"role": ["static"],
 	"threat": {"air":0.5, "surf":0.4, "water":0.1, 
 		"vs": {"scout":0.2, "raider":0.3, "heavy": 2.0, "super":2.0}
