@@ -163,7 +163,8 @@
 		"income_tier": [200],
 		"unit":          ["armlichet4", 	"armfepocht4"],
 		"land": {
-			"tier0": [ 0.50, 		0.50]
+			"tier0": [ 0.50, 		0.50],
+			"tier1": [ 0.50, 		0.50]
 		},
 		"caretaker": 9
 	},
