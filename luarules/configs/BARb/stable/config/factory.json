@@ -156,6 +156,18 @@
 		"caretaker": 9
 	},
 
+	//T3 Air Factory
+	"armapt3": {
+		"importance": [0.0, 1.0],
+		"require_energy": true,
+		"income_tier": [200],
+		"unit":          ["armlichet4", 	"armfepocht4"],
+		"land": {
+			"tier0": [ 0.50, 		0.50]
+		},
+		"caretaker": 9
+	},
+
 	// ARMADA Aircraft
 	"armap": {
 		"importance": [0.5, 0.1],
